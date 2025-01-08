@@ -6,7 +6,8 @@
 - Colors: paleta
 
 ## Colorscheme Selection
-The git repo of the program contains a palettes folder, you can choose anything from there
+The git repo of the program contains a palettes folder, you can choose anything from there:
 ```bash
 paleta < /home/benike/dev/paleta/palettes/jellybeans-dark > ~/.cache/current-palette
 ```
+These colors get loaded by the bashrc.
