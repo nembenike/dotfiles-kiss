@@ -2,7 +2,14 @@ export PS1='-> '
 export XDG_RUNTIME_DIR=/run/user/$(id -u)
 export PATH=$PATH:/home/benike/.local/bin
 
-pipewire &
+printf "Start Wayland (Sway)? [y/N]: "
+read -r answer
+if [[ "$answer" == "y" || "$answer" == "Y" ]]; then
+    pipewire &
+    pipewire-pulse &
 
-printf 'start wayland?'
-! read -r || dbus-run-session sway
+    dbus-run-session sway
+else
+    echo "Not starting Wayland."
+fi
+

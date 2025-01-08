@@ -5,6 +5,7 @@ output * bg /home/benike/.local/share/wallpaper/mountain.jpg fill
 default_border none
 floating_modifier $mod normal
 
+bindsym Print exec grim -g "$(slurp -d)" - | wl-copy -t image/png
 bindsym $mod+d exec wmenu-run
 bindsym $mod+Return exec foot
 bindsym $mod+q kill
