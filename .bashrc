@@ -1,0 +1,1 @@
+cat ~/.cache/current-palette
