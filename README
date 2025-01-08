@@ -1,0 +1,12 @@
+# KISS Linux dotfiles
+
+- WM: sway
+- Term: foot
+- Launch: wmenu
+- Colors: paleta
+
+## Colorscheme Selection
+The git repo of the program contains a palettes folder, you can choose anything from there
+```bash
+paleta < /home/benike/dev/paleta/palettes/jellybeans-dark > ~/.cache/current-palette
+```
